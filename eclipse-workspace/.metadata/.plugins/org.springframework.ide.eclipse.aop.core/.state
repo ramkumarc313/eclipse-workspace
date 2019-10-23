@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="SpringBootAjaxJqueryExample"/>
+<aop-project name="LearnSpringMVCWithRealApps"/>
+<aop-project name="WebApplicationSpringBoot"/>
+<aop-project name="SecureRestAPIWithSpringBoot"/>
+<aop-project name="fileuploadjdbctemplate"/>
+<aop-project name="spring-boot-file-upload-download-rest-api-example-mysql-database-storage"/>
+<aop-project name="pdf-app">
+<aspect-definition advice-class-name="com.bitMiners.pdf.advice.SignupAdvice" advice-method-name="aopEmail(org.aspectj.lang.JoinPoint)" advice-type="AFTER_RETURNING" aspect-end-line-number="14" aspect-name="signupAdvice" aspect-start-line-number="14" factory-id="org.springframework.ide.eclipse.aop.core.annotationAspectDefinitionElementFactory" file="/pdf-app/src/main/java/com/bitMiners/pdf/advice/SignupAdvice.java" pointcut-expression="execution(* com.bitMiners.pdf.services.impl.UserServiceImpl.addUser(..))" proxy-target-class="true">
+<aop-reference advice-type="AFTER_RETURNING" bean="1:BeansModel|2:pdf-app|3:java:com.bitMiners.pdf.PdfApplication|8:userServiceImpl:12" bean-file="/pdf-app/src/main/java/com/bitMiners/pdf/services/impl/UserServiceImpl.java" bean-start-line="12" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/pdf-app/src/main/java/com/bitMiners/pdf/PdfApplication.java" source="=pdf-app/src\/main\/java&lt;com.bitMiners.pdf.advice{SignupAdvice.java[SignupAdvice~aopEmail~QJoinPoint;" source-start-line="19" target="=pdf-app/src\/main\/java&lt;com.bitMiners.pdf.services.impl{UserServiceImpl.java[UserServiceImpl~addUser~QUser;" target-start-line="17"/>
+</aspect-definition>
+<aspect-definition advice-class-name="com.bitMiners.pdf.advice.ProfileAdvice" advice-method-name="UpdateProfileEmail(org.aspectj.lang.JoinPoint)" advice-type="AFTER" aspect-end-line-number="15" aspect-name="profileAdvice" aspect-start-line-number="15" factory-id="org.springframework.ide.eclipse.aop.core.annotationAspectDefinitionElementFactory" file="/pdf-app/src/main/java/com/bitMiners/pdf/advice/ProfileAdvice.java" pointcut-expression="execution(* com.bitMiners.pdf.repositories.impl.ProfileRepositoryImpl.update(..))" proxy-target-class="true">
+<aop-reference advice-type="AFTER" bean="1:BeansModel|2:pdf-app|3:java:com.bitMiners.pdf.PdfApplication|8:profileRepositoryImpl:14" bean-file="/pdf-app/src/main/java/com/bitMiners/pdf/repositories/impl/ProfileRepositoryImpl.java" bean-start-line="14" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/pdf-app/src/main/java/com/bitMiners/pdf/PdfApplication.java" source="=pdf-app/src\/main\/java&lt;com.bitMiners.pdf.advice{ProfileAdvice.java[ProfileAdvice~UpdateProfileEmail~QJoinPoint;" source-start-line="22" target="=pdf-app/src\/main\/java&lt;com.bitMiners.pdf.repositories.impl{ProfileRepositoryImpl.java[ProfileRepositoryImpl~update~QProfile;" target-start-line="27"/>
+</aspect-definition>
+</aop-project>
+<aop-project name="springbootcrudrest"/>
+<aop-project name="springboot-crud-rest-api-validation"/>
+<aop-project name="demo"/>
+<aop-project name="springboot-jersey-rest-crud-jpa"/>
+<aop-project name="springboot-thymeleaf-crud-tutorial-master"/>
+<aop-project name="springboot-thymeleaf-crud-tutorial"/>
+<aop-project name="spring-boot-demo"/>
+<aop-project name="spring-angular-integration"/>
+<aop-project name="spring-boot-file-upload-download-rest-api-example-master"/>
+<aop-project name="restapi"/>
+<aop-project name="demo1"/>
+<aop-project name="login"/>
+<aop-project name="registration-login-springboot-security-thymeleaf-master"/>
+<aop-project name="SpringRest"/>
+<aop-project name="springboot-thymeleaf-security-demo"/>
+</aop-reference-model>

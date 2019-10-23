@@ -1,0 +1,5 @@
+package com.jackrutorial.dao;
+
+public interface EmployeeDao {
+
+}

@@ -1,0 +1,5 @@
+package net.javaguides.springboot.tutorial.repository;
+
+public interface StudentRepository {
+
+}

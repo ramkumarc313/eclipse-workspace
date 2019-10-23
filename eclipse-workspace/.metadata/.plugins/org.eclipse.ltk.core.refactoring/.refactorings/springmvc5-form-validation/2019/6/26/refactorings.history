@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;views&apos; to &apos;springmvc5-form-validation/src/main/resources&apos;&#x0D;&#x0A;- Original project: &apos;springmvc5-form-validation&apos;&#x0D;&#x0A;- Destination element: &apos;springmvc5-form-validation/src/main/resources&apos;&#x0D;&#x0A;- Original element: &apos;views&apos;" description="Copy folder" destination="/src\/main\/resources" element1="src/main/views" files="0" flags="589830" folders="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1561469981112" units="0" version="1.0"/>
+</session>

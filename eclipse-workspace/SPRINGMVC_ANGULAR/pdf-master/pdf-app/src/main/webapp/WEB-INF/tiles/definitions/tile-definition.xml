@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+	"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	
+	<definition name="baseLayout" template="/WEB-INF/tiles/template/baseLayout.jsp">
+		<put-attribute name="title" value="Sample Title" />
+		<put-attribute name="heading" value="/WEB-INF/tiles/template/header.jsp" />
+		<put-attribute name="tagline" value="" />
+ 		<put-attribute name="navigation" value="/WEB-INF/tiles/template/navigation.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/template/footer.jsp" />
+	</definition>
+
+ 	<definition name="welcome" extends="baseLayout">
+		<put-attribute name="title" value="Welcome" />
+ 		<put-attribute name="body" value="/WEB-INF/views/welcome-page.jsp" />
+	</definition>
+	
+	<definition name="addUser" extends="baseLayout">
+		<put-attribute name="title" value="Add User" />
+ 		<put-attribute name="body" value="/WEB-INF/views/signupForm.jsp" />
+	</definition>
+	
+	<definition name="login" extends="baseLayout">
+		<put-attribute name="title" value="Login" />
+		<put-attribute name="tagline" value="Enter your Credentials" />
+		<put-attribute name="body" value="/WEB-INF/views/login.jsp" />
+	</definition>
+	
+	<definition name="forum" extends="baseLayout">
+		<put-attribute name="title" value="Forum" />
+		<put-attribute name="tagline" value="Forum" />
+		<put-attribute name="body" value="/WEB-INF/views/forumPage.jsp" />
+	</definition>
+	
+	<definition name="allUsers" extends="baseLayout">
+		<put-attribute name="title" value="Users" />
+		<put-attribute name="tagline" value="Registered Users" />
+		<put-attribute name="body" value="/WEB-INF/views/userList.jsp" />
+	</definition>
+	
+	<definition name="addQuestion" extends="baseLayout">
+		<put-attribute name="title" value="Add Question" />
+		<put-attribute name="tagline" value="Questions" />
+		<put-attribute name="body" value="/WEB-INF/views/addQuestionForm.jsp" />
+	</definition>
+	
+	<definition name="wallPage" extends="baseLayout">
+		<put-attribute name="title" value="Profile" />
+ 		<put-attribute name="body" value="/WEB-INF/views/wall-page.jsp" />
+	</definition>
+	
+	<definition name="questionTypes" extends="baseLayout">
+		<put-attribute name="title" value="Question Types" />
+		<put-attribute name="tagline" value="Questions Categories" />
+		<put-attribute name="body" value="/WEB-INF/views/questionTypesPage.jsp" />
+	</definition>
+	
+	<definition name="profile" extends="baseLayout">
+		<put-attribute name="title" value="Profile" />
+		<put-attribute name="tagline" value="User Profile" />
+		<put-attribute name="body" value="/WEB-INF/views/profilePage.jsp" />
+	</definition>
+	
+	<definition name="addQuestionType" extends="baseLayout">
+		<put-attribute name="title" value="Add Question Types" />
+		<put-attribute name="tagline" value="Questions Categories" />
+		<put-attribute name="body" value="/WEB-INF/views/questionTypesForm.jsp" />
+	</definition>
+	
+	<definition name="questionDetails" extends="baseLayout">
+		<put-attribute name="title" value="Question Details" />
+		<put-attribute name="tagline" value="Questions Detail" />
+		<put-attribute name="body" value="/WEB-INF/views/questionInDetail.jsp" />
+	</definition>
+	
+	<definition name="error-forbidden" extends="baseLayout">
+		<put-attribute name="title" value="Question Details" />
+		<put-attribute name="tagline" value="Questions Detail" />
+		<put-attribute name="body" value="/WEB-INF/views/forbiddenPage.jsp" />
+	</definition>
+	
+</tiles-definitions>

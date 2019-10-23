@@ -1,0 +1,5 @@
+package com.jackrutorial.service;
+
+public interface EmployeeService {
+
+}

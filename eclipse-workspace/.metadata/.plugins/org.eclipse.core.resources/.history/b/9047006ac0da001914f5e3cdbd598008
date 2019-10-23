@@ -1,0 +1,5 @@
+package com.jackrutorial.model;
+
+public class Employee {
+
+}
