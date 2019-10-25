@@ -1,0 +1,23 @@
+package com.pattern;
+
+public class getFactory {
+
+	public static void main(String args[])
+	{
+
+	}
+
+}
+abstract class plan{
+
+	abstract void mathod();
+
+
+}
+
+abstract class plan1 extends plan{
+
+	abstract void mathod();
+
+
+}

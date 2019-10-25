@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="D:/Software/jar/mysql-connector-java-5.1.18-bin.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Developer/Downloads/watsapp/jar_files/activation-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Developer/Downloads/watsapp/jar_files/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Developer/Downloads/watsapp/jar_files/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Developer/Downloads/watsapp/jar_files/guava-18.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Developer/Downloads/watsapp/jar_files/httpclient-4.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Developer/Downloads/watsapp/jar_files/httpcore-4.4.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Developer/Downloads/watsapp/jar_files/jackson-annotations-2.8.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Developer/Downloads/watsapp/jar_files/jackson-core-2.8.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Developer/Downloads/watsapp/jar_files/jackson-databind-2.8.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Developer/Downloads/watsapp/jar_files/jaxb-api-2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Developer/Downloads/watsapp/jar_files/jjwt-0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Developer/Downloads/watsapp/jar_files/joda-time-2.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Developer/Downloads/watsapp/jar_files/slf4j-api-1.7.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Developer/Downloads/watsapp/jar_files/stax-api-1.0-2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Developer/Downloads/watsapp/jar_files/twilio-7.17.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

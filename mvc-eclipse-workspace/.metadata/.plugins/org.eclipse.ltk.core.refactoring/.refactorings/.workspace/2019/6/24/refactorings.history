@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;spring4-form-handle-example&apos;" deleteContents="true" description="Delete resource &apos;spring4-form-handle-example&apos;" element1="/spring4-form-handle-example" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1560602500932"/>&#x0A;<refactoring comment="Delete resource &apos;spring-security-full-acl&apos;" deleteContents="false" description="Delete resource &apos;spring-security-full-acl&apos;" element1="/spring-security-full-acl" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1560602915513"/>
+</session>

@@ -1,0 +1,14 @@
+package com.javacoparater;
+
+import java.util.HashMap;
+
+public class HashMapexamble {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashMap<String, String> hm=new HashMap<>();
+		
+
+	}
+
+}

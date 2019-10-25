@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+   
+ 
+    <definition name="addCategory" extends="base.definition">
+        <put-attribute name="title" value="Employee Data Form"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/addCategory.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="addPublication" extends="base.definition">
+        <put-attribute name="title" value="Employees List"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/addPublication.jsp"></put-attribute>
+    </definition>
+    
+    
+ 
+</tiles-definitions>

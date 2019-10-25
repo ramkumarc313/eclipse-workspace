@@ -1,0 +1,209 @@
+package com.javaio;
+
+import java.awt.Image;
+import java.awt.Toolkit;
+import java.awt.image.BufferedImage;
+import java.io.BufferedInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.URL;
+import java.net.URLConnection;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.Base64;
+import java.util.Timer;
+import java.util.TimerTask;
+
+import javax.imageio.ImageIO;
+
+
+public class FileRead {
+
+
+	static Connection conn;
+
+	static FileRead obj;
+	public static Connection BasicJDBCDemo()
+	{
+		try
+		{
+			Class.forName("com.mysql.jdbc.Driver").newInstance();
+			String url = "jdbc:mysql://35.154.221.117/anc_v3_clearance";
+			conn = DriverManager.getConnection(url, "admin", "adminrooFST%^&");
+		//	System.out.println("success");
+
+		}
+		catch (ClassNotFoundException ex) {System.err.println(ex.getMessage());}
+		catch (IllegalAccessException ex) {System.err.println(ex.getMessage());}
+		catch (InstantiationException ex) {System.err.println(ex.getMessage());}
+		catch (SQLException ex)           {System.err.println(ex.getMessage());}
+
+		return conn;
+	}
+
+	public static void main(String[] args) throws Exception {
+
+		//String destinationFile = "/D:/tmp/image.jpg";
+		saveImage();
+
+
+
+	}
+
+
+
+
+	public static void saveImage() throws IOException {
+
+
+		Connection con=null;
+		String sql="";
+		PreparedStatement ps=null;
+		String storeprocedure="",sql3="",status="";
+		PreparedStatement ps1=null,ps3=null;
+		ResultSet rs=null,rs3=null,rs1=null;
+
+		//String frontimageUrl = "http://35.154.27.147:81/stcargo_kyc_uploads/consignee-c8120421-front.jpg";
+		//	String backImageUrl = "http://35.154.27.147:81/stcargo_kyc_uploads/consignee-c8120421-back.jpg";
+
+
+
+
+
+		try
+		{
+			if(con == null) {
+				con=BasicJDBCDemo();
+
+			}
+
+			storeprocedure="{call SP_Get_kyc_image_uploads_invoice_with_kyc()}";
+			ps1=con.prepareStatement(storeprocedure);
+			rs=ps1.executeQuery();
+			while(rs.next())			
+			{
+
+				byte[] imageInByte =frontImage(rs.getString(15));
+				byte[] imageInByte1=null;
+				// System.out.println(rs.getString(16));
+				if(rs.getString(16).equals("NULL"))
+				{
+					imageInByte1 =null;
+
+				}
+				else
+				{
+					imageInByte1 =backImage(rs.getString(16));
+
+
+				}
+
+
+				sql="{call SP_Ds_receiver_kyc_upload_Insert_android(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)}";
+				ps = con.prepareStatement(sql);
+				ps.setString(1, rs.getString(1));//p_Invoice_No
+				ps.setString(2, rs.getString(2));//kyc no
+				ps.setInt(3, rs.getInt(3));// origin
+				ps.setString(4, rs.getString(4));// p_sender_iqama_no
+				ps.setString(5, rs.getString(5));//p_receiver_name
+				ps.setString(6, rs.getString(6));//p_receiver_address
+				ps.setString(7, rs.getString(7));//p_receiver_mobile
+				ps.setString(8, rs.getString(8));//p_receiver_phone
+				ps.setString(9, rs.getString(9));//p_receiver_area
+				ps.setString(10, rs.getString(10));//p_receiver_email
+				ps.setString(11, rs.getString(11));//p_receiver_district_name
+				ps.setInt(12, rs.getInt(12));//p_delivery_state_id
+				ps.setInt(13, rs.getInt(13));//p_pincode			
+				ps.setString(14, rs.getString(14));//p_idcard_type
+				ps.setBytes(15, imageInByte);//p_receiver_frontid
+				ps.setBytes(16, imageInByte1);//p_receiver_backId
+				ps.setInt(17, rs.getInt(17));//createdby	
+				rs1=ps.executeQuery();
+				
+				if(rs1.next())
+				{
+					sql3="{CALL update_kyc_image_uploads('"+rs.getString(18)+"')}";
+					ps3=con.prepareStatement(sql3);
+					rs3=ps3.executeQuery();
+					System.out.print(ps3.executeQuery());
+
+					while(rs3.next())			
+					{
+						status=rs3.getString(1);
+						System.out.print(status);
+
+					}
+					System.out.print("\n[Performing INSERT] ... ");
+				}
+
+				//con.close();
+				//System.out.print("\n[Performing INSERT] ... ");
+
+			}
+
+		}
+		catch (SQLException ex)
+		{
+			System.err.println(ex.getMessage());
+		}
+
+
+	}
+
+	public static byte[] frontImage(String frontimageUrl) throws IOException {
+
+		URL url = new URL(frontimageUrl);
+		ByteArrayOutputStream output = new ByteArrayOutputStream();
+
+		try (InputStream inputStream = url.openStream()) {
+			int n = 0;
+			byte [] buffer = new byte[ 1024 ];
+			while (-1 != (n = inputStream.read(buffer))) {
+				output.write(buffer, 0, n);
+
+			}
+		}
+
+		byte[] imageInByte = output.toByteArray();
+
+		return imageInByte;
+
+	}
+
+	public static byte[] backImage(String frontimageUrl) throws IOException {
+
+		URL url = new URL(frontimageUrl);
+		ByteArrayOutputStream output = new ByteArrayOutputStream();
+
+		try (InputStream inputStream = url.openStream()) {
+			int n = 0;
+			byte [] buffer = new byte[ 1024 ];
+			while (-1 != (n = inputStream.read(buffer))) {
+				output.write(buffer, 0, n);
+
+			}
+		}
+
+		byte[] imageInByte = output.toByteArray();
+
+		return imageInByte;
+
+	}
+
+
+	
+}
+
+
+

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="D:\Developer\mvc-eclipse-workspace\CustomerManager"/>
+			<item value="D:\Developer\mvc-eclipse-workspace\SpringRest\LoginLogoutExample"/>
+			<item value="D:\Developer\mvc-eclipse-workspace\hibernate\hibernate-test-project"/>
+			<item value="D:\Developer\mvc-eclipse-workspace\hibernate\HibernateExample"/>
+			<item value="D:\Developer\mvc-eclipse-workspace\hibenatemanytomany"/>
+			<item value="D:\Developer\mvc-eclipse-workspace\hibernate\HibernateMappingExample"/>
+			<item value="D:\Developer\mvc-eclipse-workspace\hibernate\HibernateStoredprocedure"/>
+			<item value="D:\Springrestproject\todo-management-spring-boot-master"/>
+			<item value="D:\Developer\mvc-eclipse-workspace\security\twilio-java-master"/>
+			<item value="D:\Developer\mvc-eclipse-workspace\SpringMvc\Spring4MVCFileUploadDownloadWithHibernate"/>
+			<item value="D:\Developer\mvc-eclipse-workspace\SpringRest\SpringRestHibernate"/>
+			<item value="D:\Developer\mvc-eclipse-workspace\SpringRest\SpringRestExample"/>
+			<item value="D:\Developer\mvc-eclipse-workspace\SpringRest\SpringSecurityWithRest"/>
+			<item value="D:\Developer\mvc-eclipse-workspace\SpringMvc\spring-mvc-session-scope-example"/>
+			<item value="D:\Developer\mvc-eclipse-workspace\SpringMvc\springmvc_dropdown_example"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item value="All Catalogs" key="catalog"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenCheckoutLocationPage">
+		<list key="scmUrl">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenModuleWizardParentPage">
+		<list key="moduleName">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="D:\Developer\mvc-eclipse-workspace\"/>
+			<item value="D:\Developer\mvc-eclipse-workspace\springSecurityLoginOut\src\main\java\com\javatpoint\MvcWebApplicationInitializer.java"/>
+			<item value="D:\Developer\mvc-eclipse-workspace\SpringMvc\springmvc_dropdown_example\pom.xml"/>
+			<item value="D:\Developer\mvc-eclipse-workspace\springFormWithCascadingSelects-master\src\main\java\com\rockhoppertech\spring\HomeController.java"/>
+			<item value="D:\Developer\mvc-eclipse-workspace\springFormWithCascadingSelects-master\src\main\webapp\WEB-INF\web.xml"/>
+			<item value="D:\Developer\mvc-eclipse-workspace\JqueryJsonServlet"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.journaldev.spring"/>
+			<item value="com.javatpoint"/>
+			<item value="com.journaldev.hibernate"/>
+		</list>
+		<list key="groupId">
+			<item value="com.journaldev.spring"/>
+			<item value="com.javatpoint"/>
+			<item value="com.journaldev.hibernate"/>
+		</list>
+		<list key="artifactId">
+			<item value="SpringMVCHibernate"/>
+			<item value="Hibernate-one-to_one"/>
+			<item value="Hibernatetest"/>
+			<item value="HQLExample"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

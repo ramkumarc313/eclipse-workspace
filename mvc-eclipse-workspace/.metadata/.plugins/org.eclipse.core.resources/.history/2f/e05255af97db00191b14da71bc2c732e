@@ -1,0 +1,26 @@
+package com.tutorialspoint;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class EmployeeController {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Employee john = new Employee("E123", "John Nhoj", 200.99, "IT");
+		Employee south = new Employee("E223", "South Htuos", 299.99, "Sales");
+		Employee reet = new Employee("E133", "Reet Teer", 300.99, "IT");
+		Employee prateema = new Employee("E143", "Prateema Rai", 300.99, "Benefits");
+		Employee yogen = new Employee("E323", "Yogen Rai", 200.99, "Sales");
+		List<Employee> employees =Arrays.asList(john,south,reet,prateema,yogen);
+		
+		//
+		
+		Double avaregerSalary=employees.stream().collect(Collectors.averagingDouble(Employee::getSalary));
+		
+		System.out.println(avaregerSalary);
+
+	}
+
+}

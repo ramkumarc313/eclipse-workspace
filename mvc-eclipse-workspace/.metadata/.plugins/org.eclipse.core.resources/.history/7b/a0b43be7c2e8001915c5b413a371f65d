@@ -1,0 +1,11 @@
+package com.pattern;
+
+public class getFactory {
+
+}
+abstract class plan{
+	
+	abstract void mathod();
+	
+	
+}

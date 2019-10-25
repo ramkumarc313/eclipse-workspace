@@ -1,0 +1,17 @@
+package com.tutorialspoint;
+
+public class Employee {
+    private String empId;
+    private String name;
+    private Double salary;
+    private String department;
+	public Employee(String empId, String name, Double salary, String department) {
+		super();
+		this.empId = empId;
+		this.name = name;
+		this.salary = salary;
+		this.department = department;
+	}
+
+
+}
